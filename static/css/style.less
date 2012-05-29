@@ -6,12 +6,8 @@
 @dark-grey:		#4d4d4d;
 @blue:				#0e94ec;
 
-@text:				@dark-grey;
-@text-link:		@black;
 @link:				@dark-grey;
-@link-alt:		@blue;
-@pre-text:		@light-grey;
-@pre-bg:	    @dark-grey;
+@accent:			@blue;
 
 html {
 	font-size: 100%;
@@ -28,7 +24,7 @@ body {
 	padding: 0;
 	background-color: @white;
 
-	color: @text;
+	color: @dark-grey;
 	font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 16px;
@@ -37,24 +33,22 @@ body {
 }
 
 a {
-	color: @link;
+	color: @black;
 	text-decoration: none;
+	border-bottom: 1px dotted @med-grey;
 	&:link {
-		color: @link;
+		color: @black;
 	}
 	&:hover {
-		color: @link-alt;
+		color: @accent;
 		outline: 0;
 	}
 	&:active {
-		color: @link-alt;
+		color: @accent;
 		outline: 0;
 	}
 	&:focus {
 		outline: thin dotted;
-	}
-	&:visited {
-		color: darken(@link, 10%);
 	}
 }
 
@@ -115,8 +109,8 @@ section#sidebar {
 
 	figure {
 		margin: 40px 40px;
-		width: 130px;
-		height: 130px;
+		width: 100px;
+		height: 100px;
 		background-color: @light-grey;
 	}
 
@@ -132,6 +126,7 @@ section#sidebar {
 		font-size: 34px;
 		line-height: 38px;
 		a {
+			border: none;
 		}
 	}
 
@@ -171,7 +166,7 @@ section#sidebar {
 		margin: 0;
 		padding: 0;
 		position: absolute;
-		bottom: 60px;
+		bottom: 45px;
 
 		width: 258px;
 		text-align: center;
@@ -221,12 +216,41 @@ section#posts {
 		overflow-x: hidden;
 		overflow-y: hidden;
 
-		h1 {
-			margin: 0;
+		#title{
+			margin: 24px 0 0;
 			padding: 0;
+			color: @black;
+			a {
+				border: none;
+			}
+		}
+
+		h1 {
+			margin: 26px 0 18px;
 			font-size: 30px;
 			font-weight: bold;
 			line-height: 40px;
 		}
+
+		h2 {
+			margin: 26px 0 18px;
+		}
+
+		h3 {
+			margin: 26px 0 18px;
+		}
+
+		h4 {
+			margin: 20px 0 10px;
+		}
+
+		h5 {
+			margin: 20px 0 10px;
+		}
+
+		h6 {
+			margin: 20px 0 10px;
+		}
+
 	}
 }

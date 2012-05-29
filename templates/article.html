@@ -2,11 +2,11 @@
 {% block content %}
 	<header>
 		<h1>{{ article.author }}'s blog</h1>
-		<h3>Posted {{ article.date.isoformat() }}</h3>
+		<h3>{{ article.date.isoformat() }}</h3>
 	</header>
 
 	<article>
-		<h1>
+		<h1 id="title">
 			<a href="{{ article.url }}" rel="bookmark"
 				title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
 		</h1>
