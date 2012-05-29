@@ -60,13 +60,14 @@ a {
 
 pre {
 	margin: 1.5em 0;
-	color: @pre-text;
-	background-color: @pre-bg;
-	border: 1px solid @pre-bg;
+	color: @black;
+	background-color: @light-grey;
+	border: 1px solid @light-grey;
 	font-family: 'Inconsolata', 'Consolas', 'Deja Vu Sans Mono', 'Droid Sans Mono', Courier New, monospace, serif;
 	padding: 1.5em;
 	overflow: auto;
 	.box-shadow;
+	.border-radius(15px);
 }
 
 .background-clip() {
@@ -187,4 +188,45 @@ section#posts {
 	margin: 0 0 0 260px;
 	z-index: 1;
 	border-left: @light-grey 1px solid;
+
+	header {
+		margin: 0;
+		padding: 40px 40px 40px 50px;
+		text-transform: uppercase;
+		text-weight: 200;
+		text-size: 16px;
+		line-height: 33px;
+
+		h1 {
+			margin: 0;
+			padding: 0;
+			height: 0;
+			width: 0;
+			visibility: hidden;
+		}
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	article {
+		margin: 0;
+		padding: 40px 40px 40px 50px;
+		width: 620px;
+		position: relative;
+		border-top: @light-grey 1px solid;
+		font-size: 16px;
+		line-height: 25px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+
+		h1 {
+			margin: 0;
+			padding: 0;
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 40px;
+		}
+	}
 }
