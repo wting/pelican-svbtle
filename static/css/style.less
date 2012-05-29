@@ -14,18 +14,26 @@
 @pre-bg:	    @dark-grey;
 
 html {
-	background-color: @white;
-	color: @text;
 	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	overflow-y: scroll;
 }
 
 body {
+	position: absolute;
+	top: 0;
+
 	margin: 0;
 	padding: 0;
+	background-color: @white;
+
+	color: @text;
 	font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 17px;
-	line-height: 25px;
+	font-size: 13px;
+	line-height: 16px;
 	-webkit-font-smoothing: subpixel-antialiased;
+	height: 100%;
 }
 
 a {
@@ -36,6 +44,11 @@ a {
 	}
 	&:hover {
 		color: @link-alt;
+		outline: 0;
+	}
+	&:active {
+		color: @link-alt;
+		outline: 0;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -138,7 +151,7 @@ section#sidebar {
 	#footer {
 		color: @med-grey;
 		font-size: 12px;
-		font-weight: 300;
+		font-weight: 200;
 		line-height: 15px;
 	}
 }
@@ -153,7 +166,8 @@ ul#linkbar {
 	}
 	a {
 		color: @med-grey;
-		font-size: 1.1em;
+		font-size: 16px;
+		line-height: 19px;
 		border: 2px solid @light-grey;
 		.border-radius(100px);
 		z-index: 999;
@@ -162,5 +176,9 @@ ul#linkbar {
 }
 
 section#posts {
+	position: absolute;
+	top: 0;
 	margin: 0 0 0 260px;
+	z-index: 1;
+	border-left: @light-grey 1px solid;
 }
