@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
-        {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-        <meta charset="utf-8" />
-        {% endblock head %}
+	<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">
+	<script src="/theme/js/less.js" type="text/javascript"></script>
+
+	<link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
+	{% if FEED_RSS %}
+		<link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+	{% endif %}
+
+	{% block head %}
+	<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+	<meta charset="utf-8" />
+	{% endblock head %}
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in PAGES %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        {% else %}
-          {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-          {% endfor %}
-        {% endif %}
-        </ul></nav><!-- /#menu -->
-        {% block content %}
-        {% endblock %}
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<body>
+	<section id="sidebar" class="fixed">
+	<figure id="user_logo">
+		<a href="/"><div class="logo">&nbsp;</div></a>
+	</figure>
+
+	<div class="user_meta">
+		<h1 id="user"><a href="/" class="">{{ AUTHOR }}</a></h1>
+		<h2>{{ TAGLINE }}</h2>
+		<ul id="linkbar" class="clearfix">
+			{% for title, link in MENUITEMS %}
+				<li><a href="{{ link }}">{{ title }}</a></li>
+			{% endfor %}
+			{% if DISPLAY_PAGES_ON_MENU %}
+				{% for p in PAGES %}
+					<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+				{% endfor %}
+			{% else %}
+				{% for cat, null in categories %}
+					<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+				{% endfor %}
+			{% endif %}
+			{% for name, link in LINKS %}
+				<li class="linkbar"><a href="{{ link }}">{{ name }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<address id="about" class="vcard body">
+		powered by <a href="http://pelican.notmyidea.org/">pelican</a>
+	</address><!-- /#about -->
+	</section>
+
+	{% block content %}
+	{% endblock %}
 </body>
 </html>
