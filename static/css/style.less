@@ -111,7 +111,7 @@ section#sidebar {
 		margin: 40px 40px;
 		width: 100px;
 		height: 100px;
-		background-color: @light-grey;
+		background-color: @white;
 	}
 
 	.user_meta {
@@ -217,7 +217,7 @@ section#posts {
 		overflow-y: hidden;
 
 		#title{
-			margin: 24px 0 0;
+			margin: 32px 0 0;
 			padding: 0;
 			color: @black;
 			a {
@@ -226,30 +226,54 @@ section#posts {
 		}
 
 		h1 {
-			margin: 26px 0 18px;
-			font-size: 30px;
-			font-weight: bold;
-			line-height: 40px;
+			margin: 24px 0 16px;
+			color: @black;
+			font-size: 24px;
+			line-height: 32px;
 		}
 
 		h2 {
-			margin: 26px 0 18px;
+			margin: 24px 0 14px;
+			color: @black;
+			font-size: 20px;
+			line-height: 26px;
 		}
 
 		h3 {
-			margin: 26px 0 18px;
+			margin: 22px 0 12px;
+			color: @black;
 		}
 
 		h4 {
 			margin: 20px 0 10px;
+			color: @black;
 		}
 
 		h5 {
 			margin: 20px 0 10px;
+			color: @black;
 		}
 
 		h6 {
 			margin: 20px 0 10px;
+			color: @black;
+		}
+
+		/*ul {*/
+			/*list-style-position: outside;*/
+			/*list-style-type: square;*/
+
+			/*li:before {*/
+				/*content: "\00BB \0020";*/
+			/*}*/
+		/*}*/
+
+		blockquote {
+			margin: 0;
+			padding: 0 0 0 20px;
+			display: inline-block;
+			border-left: 10px solid @accent;
+			max-width: 500px;
 		}
 
 	}
