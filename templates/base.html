@@ -23,7 +23,7 @@
 		<div class="user_meta">
 			<h1 id="user"><a href="/" class="">{{ AUTHOR }}</a></h1>
 			<h2>{{ TAGLINE }}</h2>
-			<ul id="linkbar" class="clearfix">
+			<ul>
 				{% for title, link in MENUITEMS %}
 					<li><a href="{{ link }}">{{ title }}</a></li>
 				{% endfor %}
@@ -37,12 +37,13 @@
 					{% endfor %}
 				{% endif %}
 				{% for name, link in LINKS %}
-					<li class="linkbar"><a href="{{ link }}">{{ name }}</a></li>
+					<li><a href="{{ link }}">{{ name }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
 		<address id="footer">
-			Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>
+			Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
+			theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
 		</address><!-- /#about -->
 	</section>
 
