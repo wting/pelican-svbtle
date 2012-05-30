@@ -16,12 +16,11 @@ You can see this theme in action on my [blog](http://williamting.com).
 - Disqus commenting
 - custom list of links
 
-## MISSING FEATURES
+## KNOWN ISSUES
 
-- pages
-- custom menu
-- index page date format is coded via JavaScript and ignores DEFAULT_DATE_FORMAT (current format is: Aug 05, 2012).
-- tag cloud
+- no pages feature
+- no custom menu
+- header date format is hardcoded in `./templates/header.html` with the exception of articles which uses `DEFAULT_DATE_FORMAT`
 
 ## INSTALL
 
