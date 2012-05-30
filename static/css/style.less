@@ -17,9 +17,6 @@ html {
 }
 
 body {
-	position: absolute;
-	top: 0;
-
 	margin: 0;
 	padding: 0;
 	background-color: @white;
@@ -50,18 +47,6 @@ a {
 	&:focus {
 		outline: thin dotted;
 	}
-}
-
-pre {
-	margin: 1.5em 0;
-	color: @black;
-	background-color: @light-grey;
-	border: 1px solid @light-grey;
-	font-family: 'Inconsolata', 'Consolas', 'Deja Vu Sans Mono', 'Droid Sans Mono', Courier New, monospace, serif;
-	padding: 1.5em;
-	overflow: auto;
-	.box-shadow;
-	.border-radius(15px);
 }
 
 .background-clip() {
@@ -111,7 +96,6 @@ section#sidebar {
 		margin: 40px 40px;
 		width: 100px;
 		height: 100px;
-		background-color: @white;
 	}
 
 	.user_meta {
@@ -157,7 +141,6 @@ section#sidebar {
 			line-height: 19px;
 			border: 2px solid @light-grey;
 			.border-radius(35px);
-			z-index: 999;
 			padding: 7px 15px;
 		}
 	}
@@ -178,15 +161,18 @@ section#sidebar {
 }
 
 section#posts {
-	position: absolute;
 	top: 0;
 	margin: 0 0 0 260px;
-	z-index: 1;
+	min-width: 710px;
 	border-left: @light-grey 1px solid;
+	background-color: rgba(255,255,255,.9);
+	position: relative;
+	z-index: 1;
 
 	header {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
+		font-color: @black;
 		text-transform: uppercase;
 		text-weight: 200;
 		text-size: 16px;
@@ -208,7 +194,7 @@ section#posts {
 	article {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
-		width: 620px;
+		min-width: 620px;
 		position: relative;
 		border-top: @light-grey 1px solid;
 		font-size: 16px;
@@ -259,14 +245,24 @@ section#posts {
 			color: @black;
 		}
 
-		/*ul {*/
-			/*list-style-position: outside;*/
-			/*list-style-type: square;*/
+		ul, ol {
+			margin: 0 0 0 15px;
+			padding: 0;
+			list-style-position: outside;
+
+			li {
+				margin: 0 0 15px 15px;
+				padding: 3px 0 3px 5px;
+			}
 
 			/*li:before {*/
 				/*content: "\00BB \0020";*/
 			/*}*/
-		/*}*/
+		}
+
+		p {
+			width: 550px;
+		}
 
 		blockquote {
 			margin: 0;
@@ -274,6 +270,20 @@ section#posts {
 			display: inline-block;
 			border-left: 10px solid @accent;
 			max-width: 500px;
+		}
+
+		pre {
+			margin: 0;
+			padding: 0 0 0 20px;
+			display: inline-block;
+			border-left: 10px solid @accent;
+			width: 590px;
+
+			color: @black;
+			background-color: @light-grey;
+			font-family: 'Inconsolata', 'Consolas', 'Deja Vu Sans Mono', 'Droid Sans Mono', Courier New, monospace, serif;
+			overflow-x: auto;
+			.box-shadow;
 		}
 
 	}
