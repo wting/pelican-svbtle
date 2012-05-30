@@ -13,9 +13,11 @@ section#sidebar li{margin:0;padding:10px 0 20px;clear:both;display:block;float:n
 section#sidebar footer{margin:0;padding:0;position:absolute;bottom:45px;width:258px;text-align:center;color:#999999;font-size:12px;font-weight:300;line-height:15px;}
 section#posts{top:0;margin:0 0 0 260px;padding:0 0 75px 0;min-width:710px;border-left:#eeeeee 1px solid;background-color:rgba(255, 255, 255, 0.9);position:relative;z-index:1;}section#posts header{margin:0;padding:40px 40px 40px 50px;font-color:#000000;font-weight:300;text-transform:uppercase;text-size:16px;line-height:33px;}section#posts header h1{margin:0;padding:0;height:0;width:0;visibility:hidden;}
 section#posts header h3{margin:0;padding:0;color:#000000;}
-section#posts footer{margin:0;padding:40px 50px;border-top:#eeeeee 1px solid;}section#posts footer a{margin:0;padding:10px 20px;display:inline-block;border:3px solid #0e94ec;border-radius:70px;-moz-border-radius:70px;-webkit-border-radius:70px;text-transform:uppercase;color:#0e94ec;font-size:17px;font-weight:400;}section#posts footer a:link{color:#0e94ec;}
-section#posts footer a:hover{color:#ffffff;background-color:#0e94ec;outline:0;}
-section#posts footer a:active{color:#ffffff;background-color:#0e94ec;outline:0;}
+section#posts footer{margin:0;padding:0;border-top:#eeeeee 1px solid;}
+section#posts a.button_accent{margin:40px 50px;padding:10px 20px;display:inline-block;border:3px solid #0e94ec;border-radius:70px;-moz-border-radius:70px;-webkit-border-radius:70px;text-transform:uppercase;color:#0e94ec;font-size:17px;font-weight:400;}section#posts a.button_accent:link{color:#0e94ec;}
+section#posts a.button_accent:hover{color:#ffffff;background-color:#0e94ec;outline:0;}
+section#posts a.button_accent:active{color:#ffffff;background-color:#0e94ec;outline:0;}
+section#posts p.paginator{margin:0;padding:0;min-height:122px;border-top:#eeeeee 1px solid;}
 section#posts article{margin:0;padding:40px 40px 40px 50px;min-width:620px;position:relative;border-top:#eeeeee 1px solid;font-size:16px;line-height:25px;overflow-x:hidden;overflow-y:hidden;}section#posts article #title{margin:32px 0 0;padding:0;color:#000000;}section#posts article #title a{border:none;}
 section#posts article h1{margin:24px 0 16px;color:#000000;font-size:24px;line-height:32px;}
 section#posts article h2{margin:24px 0 14px;color:#000000;font-size:20px;line-height:26px;}
