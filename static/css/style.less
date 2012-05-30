@@ -6,7 +6,6 @@
 @dark-grey:		#4d4d4d;
 @blue:				#0e94ec;
 
-@link:				@dark-grey;
 @accent:			@blue;
 
 html {
@@ -145,7 +144,7 @@ section#sidebar {
 		}
 	}
 
-	#footer {
+	footer {
 		margin: 0;
 		padding: 0;
 		position: absolute;
@@ -315,6 +314,53 @@ section#posts {
 			overflow-x: auto;
 			.box-shadow;
 		}
+	}
 
+	dl {
+		margin: 0;
+		padding: 40px 40px 40px 50px;
+		min-width: 620px;
+		position: relative;
+		border-top: @light-grey 1px solid;
+		font-size: 16px;
+		line-height: 25px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+
+		ol {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+
+			li {
+				width: 550px;
+			}
+
+			.title {
+				margin: 36px 0 0;
+				padding: 0;
+				color: @black;
+				a {
+					border: none;
+				}
+			}
+
+			abbr {
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+				font-weight: 200px;
+				font-size: 13px;
+				line-height: 16px;
+			}
+
+			hr {
+				color: @light-grey;
+				background-color: @light-grey;
+				height: 1px;
+				width: 100%;
+				border: none;
+			}
+		}
 	}
 }

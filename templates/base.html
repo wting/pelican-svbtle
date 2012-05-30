@@ -2,7 +2,6 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
 	<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">
-	<script src="/theme/js/less.js" type="text/javascript"></script>
 
 	<link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
 	{% if FEED_RSS %}
@@ -41,15 +40,20 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<address id="footer">
-			Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
-			theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
-		</address><!-- /#about -->
+		<footer>
+			<address>
+				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
+				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+			</address>
+		</footer>
 	</section>
 
 	<section id="posts">
 	{% block content %}
 	{% endblock %}
 	</section>
+
+	<script src="/theme/js/less.js" type="text/javascript"></script>
+	{% include 'analytics.html' %}
 </body>
 </html>
