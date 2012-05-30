@@ -4,7 +4,7 @@ a{color:#000000;text-decoration:none;border-bottom:1px dotted #999999;}a:link{co
 a:hover{color:#0e94ec;outline:0;}
 a:active{color:#0e94ec;outline:0;}
 a:focus{outline:thin dotted;}
-.clearfix{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{content:".";display:block;height:0;clear:both;}
 section#sidebar{width:258px;position:fixed;top:0;left:0;bottom:0;right:auto;min-height:700px;z-index:0;}section#sidebar figure{margin:40px 40px;width:100px;height:100px;}
 section#sidebar h1{margin:30px 20px 10px 0px;padding:0 0 0 40px;display:block;font-family:'Proxima Nova','Open Sans',sans-serif;font-weight:900;font-size:34px;line-height:38px;}section#sidebar h1 a{border:none;}
 section#sidebar h2{margin:0 40px 0 0;padding:0 0 0 40px;font-size:18px;font-weight:300;line-height:20px;}
@@ -29,7 +29,7 @@ section#posts article blockquote{margin:0;padding:0 0 0 20px;display:inline-bloc
 section#posts article pre{margin:0;padding:0 0 0 20px;display:inline-block;border-left:10px solid #0e94ec;width:590px;color:#000000;background-color:#eeeeee;font-family:'Inconsolata',monospace,serif;overflow-x:auto;box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3),0 1px 0 rgba(255, 255, 255, 0.6);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3),0 1px 0 rgba(255, 255, 255, 0.6);-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3),0 1px 0 rgba(255, 255, 255, 0.6);}
 section#posts article hr{color:#eeeeee;background-color:#eeeeee;height:1px;width:100%;border:none;}
 section#posts #comments{margin:0;padding:40px 40px 40px 50px;position:relative;border-top:#eeeeee 1px solid;font-size:16px;line-height:25px;}section#posts #comments h2{color:#000000;}
-section#posts #comments #disqus_thread{width:600px;}
+section#posts #disqus_thread{width:600px;}
 section#posts dl{margin:0;padding:0;font-size:16px;line-height:25px;overflow-x:hidden;overflow-y:hidden;}section#posts dl ol{margin:0;padding:0;list-style-type:none;}section#posts dl ol li{margin:0 0 30px;padding:0 0 0 50px;border-top:#eeeeee 1px solid;}
 section#posts dl ol .title{margin:76px 0 0;padding:0;color:#000000;}section#posts dl ol .title a{border:none;}
 section#posts dl ol .entry-content{width:550px;}

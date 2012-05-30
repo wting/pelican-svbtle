@@ -71,7 +71,7 @@ a {
 	display: block;
 	height: 0;
 	clear: both;
-	visibility: hidden;
+	//visibility: hidden; // causes problems with Disqus commenting
 }
 
 .wrap() {
@@ -337,9 +337,10 @@ section#posts {
 			color: @black;
 		}
 
-		#disqus_thread {
-			width: 600px;
-		}
+	}
+
+	#disqus_thread {
+		width: 600px;
 	}
 
 	dl {

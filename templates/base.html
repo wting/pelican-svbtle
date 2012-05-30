@@ -6,9 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
 
-	<link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
+	<link href="{{ FEED_DOMAIN }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
 	{% if FEED_RSS %}
-		<link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 	{% endif %}
 
 	{% block head %}
