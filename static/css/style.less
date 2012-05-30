@@ -327,7 +327,7 @@ section#posts {
 	#comments {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
-		min-width: 620px;
+		max-width: 600px;
 		position: relative;
 		border-top: @light-grey 1px solid;
 		font-size: 16px;
@@ -336,10 +336,7 @@ section#posts {
 
 	dl {
 		margin: 0;
-		padding: 40px 40px 40px 50px;
-		min-width: 620px;
-		position: relative;
-		border-top: @light-grey 1px solid;
+		padding: 0;
 		font-size: 16px;
 		line-height: 25px;
 		overflow-x: hidden;
@@ -351,16 +348,22 @@ section#posts {
 			list-style-type: none;
 
 			li {
-				width: 550px;
+				margin: 0 0 30px;
+				padding: 0 0 0 50px;
+				border-top: @light-grey 1px solid;
 			}
 
 			.title {
-				margin: 36px 0 0;
+				margin: 76px 0 0;
 				padding: 0;
 				color: @black;
 				a {
 					border: none;
 				}
+			}
+
+			.entry-content {
+				width: 550px;
 			}
 
 			abbr {
@@ -370,14 +373,7 @@ section#posts {
 				font-weight: 200px;
 				font-size: 13px;
 				line-height: 16px;
-			}
-
-			hr {
-				color: @light-grey;
-				background-color: @light-grey;
-				height: 1px;
-				width: 100%;
-				border: none;
+				visibility: hidden;
 			}
 		}
 	}
