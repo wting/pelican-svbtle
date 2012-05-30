@@ -169,9 +169,103 @@ section#posts {
 	position: relative;
 	z-index: 1;
 
+	h1 {
+		margin: 24px 0 16px;
+		color: @black;
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	h2 {
+		margin: 24px 0 14px;
+		color: @black;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	h3 {
+		margin: 22px 0 12px;
+		color: @black;
+	}
+
+	h4 {
+		margin: 20px 0 10px;
+		color: @black;
+	}
+
+	h5 {
+		margin: 20px 0 10px;
+		color: @black;
+	}
+
+	h6 {
+		margin: 20px 0 10px;
+		color: @black;
+	}
+
+	ul, ol {
+		margin: 0 0 0 15px;
+		padding: 0;
+		list-style-position: outside;
+
+		li {
+			margin: 0 0 15px 15px;
+			padding: 3px 0 3px 5px;
+		}
+
+		/*li:before {*/
+			/*content: "\00BB \0020";*/
+		/*}*/
+	}
+
+	p {
+		width: 550px;
+	}
+
+	blockquote {
+		margin: 0;
+		padding: 0 0 0 20px;
+		display: inline-block;
+		border-left: 10px solid @accent;
+		max-width: 500px;
+	}
+
+	code {
+		margin: 0;
+		padding: 2px 4px;
+
+		color: @black;
+		background-color: @light-grey;
+		font-family: 'Inconsolata', monospace, serif;
+		.box-shadow;
+	}
+
+	pre {
+		margin: 0;
+		padding: 0 0 0 20px;
+		display: inline-block;
+		border-left: 10px solid @accent;
+		width: 590px;
+
+		color: @black;
+		background-color: @light-grey;
+		font-family: 'Inconsolata', monospace, serif;
+		overflow-x: auto;
+		.box-shadow;
+	}
+
+	hr {
+		color: @light-grey;
+		background-color: @light-grey;
+		height: 1px;
+		width: 100%;
+		border: none;
+	}
+
 	header {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
+		border-bottom: @light-grey 1px solid;
 		font-color: @black;
 		font-weight: 300;
 		text-transform: uppercase;
@@ -227,6 +321,7 @@ section#posts {
 		margin: 0;
 		padding: 0;
 		min-height: 122px;
+		width: 100%;
 		border-top: @light-grey 1px solid;
 	}
 
@@ -235,7 +330,6 @@ section#posts {
 		padding: 40px 40px 40px 50px;
 		min-width: 620px;
 		position: relative;
-		border-top: @light-grey 1px solid;
 		font-size: 16px;
 		line-height: 25px;
 		overflow-x: hidden;
@@ -253,99 +347,6 @@ section#posts {
 		#article_meta {
 			font-size: 13px;
 			line-height: 16px;
-		}
-
-		h1 {
-			margin: 24px 0 16px;
-			color: @black;
-			font-size: 24px;
-			line-height: 32px;
-		}
-
-		h2 {
-			margin: 24px 0 14px;
-			color: @black;
-			font-size: 20px;
-			line-height: 26px;
-		}
-
-		h3 {
-			margin: 22px 0 12px;
-			color: @black;
-		}
-
-		h4 {
-			margin: 20px 0 10px;
-			color: @black;
-		}
-
-		h5 {
-			margin: 20px 0 10px;
-			color: @black;
-		}
-
-		h6 {
-			margin: 20px 0 10px;
-			color: @black;
-		}
-
-		ul, ol {
-			margin: 0 0 0 15px;
-			padding: 0;
-			list-style-position: outside;
-
-			li {
-				margin: 0 0 15px 15px;
-				padding: 3px 0 3px 5px;
-			}
-
-			/*li:before {*/
-				/*content: "\00BB \0020";*/
-			/*}*/
-		}
-
-		p {
-			width: 550px;
-		}
-
-		blockquote {
-			margin: 0;
-			padding: 0 0 0 20px;
-			display: inline-block;
-			border-left: 10px solid @accent;
-			max-width: 500px;
-		}
-
-		code {
-			margin: 0;
-			padding: 2px 4px;
-
-			color: @black;
-			background-color: @light-grey;
-			font-family: 'Inconsolata', monospace, serif;
-			.box-shadow;
-		}
-
-		pre {
-			margin: 0;
-			padding: 0 0 0 20px;
-			display: inline-block;
-			border-left: 10px solid @accent;
-			width: 590px;
-
-			color: @black;
-			background-color: @light-grey;
-			font-family: 'Inconsolata', monospace, serif;
-			overflow-x: auto;
-			.box-shadow;
-		}
-
-		hr {
-			color: @light-grey;
-			background-color: @light-grey;
-			height: 1px;
-			width: 100%;
-			border: none;
 		}
 	}
 
@@ -382,9 +383,9 @@ section#posts {
 			list-style-type: none;
 
 			li {
-				margin: 0 0 30px;
-				padding: 0 0 0 50px;
-				border-top: @light-grey 1px solid;
+				margin: 0 0 0px;
+				padding: 0 0 50px 50px;
+				border-bottom: @light-grey 1px solid;
 			}
 
 			.title {
