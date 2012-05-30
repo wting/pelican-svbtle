@@ -191,6 +191,36 @@ section#posts {
 		}
 	}
 
+	footer {
+		margin: 0;
+		padding: 40px 50px 60px;
+		border-top: @light-grey 1px solid;
+		a {
+			margin: 0 0 50px;
+			padding: 10px 20px;
+			display: inline-block;
+			border: 3px solid @accent;
+			.border-radius(70px);
+			text-transform: uppercase;
+			color: @accent;
+			font-size: 17px;
+			font-weight: 700;
+			&:link {
+				color: @accent;
+			}
+			&:hover {
+				color: @white;
+				background-color: @accent;
+				outline: 0;
+			}
+			&:active {
+				color: @white;
+				background-color: @accent;
+				outline: 0;
+			}
+		}
+	}
+
 	article {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
