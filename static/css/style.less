@@ -213,13 +213,17 @@ section#posts {
 			padding: 3px 0 3px 5px;
 		}
 
+		pre {
+			width: 517px;
+		}
+
 		/*li:before {*/
 			/*content: "\00BB \0020";*/
 		/*}*/
 	}
 
 	p {
-		width: 550px;
+		width: 600px;
 	}
 
 	blockquote {
@@ -228,6 +232,9 @@ section#posts {
 		display: inline-block;
 		border-left: 10px solid @accent;
 		max-width: 500px;
+		p {
+			width: 530px;
+		}
 	}
 
 	code {
@@ -245,7 +252,7 @@ section#posts {
 		padding: 0 0 0 20px;
 		display: inline-block;
 		border-left: 10px solid @accent;
-		width: 590px;
+		width: 550px;
 
 		color: @black;
 		background-color: @light-grey;
@@ -290,6 +297,16 @@ section#posts {
 		margin: 0;
 		padding: 0;
 		border-top: @light-grey 1px solid;
+	}
+
+	td.linenos {
+		pre {
+			margin: 0;
+			padding: 0 2px;
+			width: 20px;
+			border: none;
+			text-align: right;
+		}
 	}
 
 	a.button_accent {
