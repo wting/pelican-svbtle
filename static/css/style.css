@@ -19,6 +19,7 @@ section#posts a.button_accent:hover{color:#ffffff;background-color:#0e94ec;outli
 section#posts a.button_accent:active{color:#ffffff;background-color:#0e94ec;outline:0;}
 section#posts p.paginator{margin:0;padding:0;min-height:122px;border-top:#eeeeee 1px solid;}
 section#posts article{margin:0;padding:40px 40px 40px 50px;min-width:620px;position:relative;border-top:#eeeeee 1px solid;font-size:16px;line-height:25px;overflow-x:hidden;overflow-y:hidden;}section#posts article #title{margin:32px 0 0;padding:0;color:#000000;}section#posts article #title a{border:none;}
+section#posts article #article_meta{font-size:13px;line-height:16px;}
 section#posts article h1{margin:24px 0 16px;color:#000000;font-size:24px;line-height:32px;}
 section#posts article h2{margin:24px 0 14px;color:#000000;font-size:20px;line-height:26px;}
 section#posts article h3{margin:22px 0 12px;color:#000000;}

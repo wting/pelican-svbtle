@@ -11,6 +11,19 @@
 				title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
 		</h1>
 		{{ article.content }}
+
+		<div id="article_meta">
+			{% if not article.category == 'posts' %}
+				Category:
+					<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+			{% endif %}
+			{% if article.tags %}
+				<br />Tags:
+				{% for tag in article.tags %}
+					<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+				{% endfor %}
+			{% endif %}
+		</div>
 	</article>
 
 	<footer>
