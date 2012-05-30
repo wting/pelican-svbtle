@@ -21,7 +21,7 @@ body {
 	background-color: @white;
 
 	color: @dark-grey;
-	font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Proxima Nova', 'Open Sans', sans-serif;
 	font-size: 13px;
 	line-height: 16px;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -104,8 +104,8 @@ section#sidebar {
 		margin: 30px 20px 10px 0px;
 		padding: 0 0 0 40px;
 		display: block;
-		font-family: 'Freight Sans Pro', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
-		font-weight: bold;
+		font-family: 'Proxima Nova', 'Open Sans', sans-serif;
+		font-weight: 900;
 		font-size: 34px;
 		line-height: 38px;
 		a {
@@ -117,7 +117,7 @@ section#sidebar {
 		margin: 0 40px 0 0;
 		padding: 0 0 0 40px;
 		font-size: 18px;
-		font-weight: 200;
+		font-weight: 300;
 		line-height: 20px;
 	}
 
@@ -154,7 +154,7 @@ section#sidebar {
 		text-align: center;
 		color: @med-grey;
 		font-size: 12px;
-		font-weight: 200;
+		font-weight: 300;
 		line-height: 15px;
 	}
 }
@@ -172,8 +172,8 @@ section#posts {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
 		font-color: @black;
+		font-weight: 300;
 		text-transform: uppercase;
-		text-weight: 200;
 		text-size: 16px;
 		line-height: 33px;
 
@@ -187,6 +187,7 @@ section#posts {
 		h3 {
 			margin: 0;
 			padding: 0;
+			color: @black;
 		}
 	}
 
@@ -203,7 +204,7 @@ section#posts {
 			text-transform: uppercase;
 			color: @accent;
 			font-size: 17px;
-			font-weight: 700;
+			font-weight: 400;
 			&:link {
 				color: @accent;
 			}
@@ -310,7 +311,7 @@ section#posts {
 
 			color: @black;
 			background-color: @light-grey;
-			font-family: 'Inconsolata', 'Consolas', 'Deja Vu Sans Mono', 'Droid Sans Mono', Courier New, monospace, serif;
+			font-family: 'Inconsolata', monospace, serif;
 			overflow-x: auto;
 			.box-shadow;
 		}
@@ -327,11 +328,18 @@ section#posts {
 	#comments {
 		margin: 0;
 		padding: 40px 40px 40px 50px;
-		max-width: 600px;
 		position: relative;
 		border-top: @light-grey 1px solid;
 		font-size: 16px;
 		line-height: 25px;
+
+		h2 {
+			color: @black;
+		}
+
+		#disqus_thread {
+			width: 600px;
+		}
 	}
 
 	dl {
@@ -370,7 +378,7 @@ section#posts {
 				margin: 0;
 				padding: 0;
 				text-transform: uppercase;
-				font-weight: 200px;
+				font-weight: 300px;
 				font-size: 13px;
 				line-height: 16px;
 				visibility: hidden;
