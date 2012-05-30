@@ -5,7 +5,7 @@ Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with a few m
 
 ## DEMO
 
-You can see this theme in action on my [blog](http://williamting.com).
+You can see this theme in action on my [blog](http://williamting.com). The theme code is available [here](https://github.com/wting/pelican-svbtle), or the website code [here](https://github.com/wting/williamting.com).
 
 ![theme screenshot](https://raw.github.com/wting/pelican-svbtle/master/screenshot.png)
 
@@ -26,7 +26,7 @@ You can see this theme in action on my [blog](http://williamting.com).
 
 ### FROM SOURCE
 
-Download the repository and save it somewhere accessible. Edit `settings.py` and modify the `THEME` variable to point to the downloaded theme location.
+Download the [repository](https://github.com/wting/pelican-svbtle) and save it somewhere accessible. Edit `settings.py` and modify the `THEME` variable to point to the downloaded theme location.
 
 ### FROM OFFICIAL REPO
 
@@ -47,10 +47,6 @@ These are the Pelican global variables currently supported by the theme:
 - Accent color can be changed by editing `@accent` in `./static/css/style.less`.
 
 - A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
-
-## SOURCE CODE
-
-Code can be found at this GitHub [repo](https://github.com/wting/pelican-svbtle).
 
 ## AUTHOR
 
