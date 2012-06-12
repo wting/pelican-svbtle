@@ -5,7 +5,7 @@ Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with a few m
 
 ## DEMO
 
-You can see the theme in action in this blog [post](http://williamting.com/drafts/this-is-a-theme-testing-post.html). The theme code is available [here](https://github.com/wting/pelican-svbtle), or the website code [here](https://github.com/wting/williamting.com).
+You can see the [theme in action](http://williamting.com/drafts/this-is-a-theme-testing-post.html), or the site code [here](https://github.com/wting/williamting.com).
 
 ![theme screenshot](https://raw.github.com/wting/pelican-svbtle/master/screenshot.png)
 
@@ -18,10 +18,10 @@ You can see the theme in action in this blog [post](http://williamting.com/draft
 
 ## KNOWN ISSUES
 
-- no IE testing (only Chrome / FF / Opera)
+- no IE testing
 - no pages feature
 - no custom menu
-- header date format is hardcoded in `./templates/header.html` with the exception of articles which uses `DEFAULT_DATE_FORMAT`
+- header date format is hardcoded in `./templates/header.html` with the exception of articles.
 
 ## INSTALL
 
