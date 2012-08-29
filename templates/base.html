@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
-	<link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+	<link rel="stylesheet" type="text/css" href="theme/css/style.css">
 	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
 	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
-	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
+	<link rel="stylesheet" type="text/css" href="theme/css/pygments.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
 
 	<link href="{{ FEED_DOMAIN }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
@@ -20,11 +20,11 @@
 <body>
 	<section id="sidebar">
 		<figure id="user_logo">
-			<a href="/"><div class="logo">&nbsp;</div></a>
+            <a href="{{ SITEURL }}"><div class="logo">&nbsp;</div></a>
 		</figure>
 
 		<div class="user_meta">
-			<h1 id="user"><a href="/" class="">{{ AUTHOR }}</a></h1>
+            <h1 id="user"><a href="{{ SITEURL }}" class="">{{ AUTHOR }}</a></h1>
 			<h2>{{ TAGLINE }}</h2>
 			<ul>
 				{% for title, link in MENUITEMS %}
@@ -47,7 +47,7 @@
 		<footer>
 			<address>
 				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
-				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+		                theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
 			</address>
 		</footer>
 	</section>
