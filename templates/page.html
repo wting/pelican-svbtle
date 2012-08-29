@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{%endblock%}
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    {{ page.content }}
+	{% include "header.html" %}
+	<article>
+		<h1 id="title">
+			<a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark">{{ page.title }}</a>
+		</h1>
+		{{ page.content }}
+
+	</article>
+
+	<footer>
+		<a href="{{ SITEURL }}/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
+	</footer>
 {% endblock %}
