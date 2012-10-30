@@ -42,6 +42,10 @@ These are the Pelican global variables currently supported by the theme:
 - `DEFAULT_DATE_FORMAT = ('%b %d, %Y')`: suggested date format
 - `FEED_DOMAIN = SITEURL`
 
+When developing locally, set the following variable:
+
+`SITEURL = http://localhost:8000`
+
 ## MODIFICATION
 
 - Accent color can be changed by editing `@accent` in `./static/css/style.less`.
