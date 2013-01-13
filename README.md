@@ -27,7 +27,7 @@ the site code [here](https://github.com/wting/williamting.com).
   exception of articles.
 - Svbtle uses Freight-Sans-Pro for article titles and Proxima Nova for body.
   While they are two great fonts, neither are free. I've linked to them in
-  case the client has them installed, but for users will be view the site
+  case the client has them installed, but most users will be view the site
   with Open Sans.
 
 ## INSTALL
