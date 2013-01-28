@@ -18,6 +18,7 @@ the site code [here](https://github.com/wting/williamting.com).
 - Google Analytics
 - Disqus commenting
 - custom list of links
+- support for this LaTeX via this [plugin][latex]
 
 ## KNOWN ISSUES
 
@@ -57,6 +58,9 @@ When developing locally, set the following variable:
 
 `SITEURL = http://localhost:8000`
 
+If you want to enable LaTeX support, additional settings must be
+[configured][latex].
+
 ## MODIFICATION
 
 - Accent color can be changed by editing `@accent` in `./static/css/style.less`.
@@ -71,3 +75,5 @@ William Ting
 ## LICENSE
 
 Released under MIT License, full details in `LICENSE` file.
+
+[latex]: https://github.com/barrysteyn/pelican_plugin-latex
