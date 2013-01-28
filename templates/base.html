@@ -12,6 +12,10 @@
 		<link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 	{% endif %}
 
+	{% if article and article.latex %}
+		{{ article.latex }}
+	{% endif %}
+
 	{% block head %}
 		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 		<meta charset="utf-8" />
