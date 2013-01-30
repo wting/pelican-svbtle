@@ -18,7 +18,7 @@ the site code [here](https://github.com/wting/williamting.com).
 - Google Analytics
 - Disqus commenting
 - custom list of links
-- support for this LaTeX via this [plugin][latex]
+- support for this LaTeX [plugin][latex]
 
 ## KNOWN ISSUES
 
