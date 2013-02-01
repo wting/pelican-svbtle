@@ -1,4 +1,3 @@
-
 # SVBTLE
 
 Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with
@@ -27,9 +26,9 @@ the site code [here](https://github.com/wting/williamting.com).
 - header date format is hardcoded in `./templates/header.html` with the
   exception of articles.
 - Svbtle uses Freight-Sans-Pro for article titles and Proxima Nova for body.
-  While they are two great fonts, neither are free. I've linked to them in
-  case the client has them installed, but most users will be view the site
-  with Open Sans.
+  While they are great fonts, neither are free. I've linked to them in case
+  the client has them installed, but most users will browse the site with Open
+  Sans.
 
 ## INSTALL
 
