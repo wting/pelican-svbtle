@@ -8,6 +8,7 @@ a:focus{outline:thin dotted;}
 section#sidebar{width:258px;position:fixed;top:0;left:0;bottom:0;right:auto;min-height:700px;z-index:0;}section#sidebar figure{margin:40px 40px;width:100px;height:100px;}
 section#sidebar h1{margin:30px 20px 10px 0px;padding:0 0 0 40px;display:block;font-family:'Proxima Nova','Open Sans','Lato',sans-serif;font-weight:900;font-size:34px;line-height:38px;}section#sidebar h1 a{border:none;}
 section#sidebar h2{margin:0 40px 0 0;padding:0 0 0 40px;font-size:18px;font-weight:300;line-height:20px;}
+section#sidebar p.bio{padding:0 0 0 40px;}
 section#sidebar ul{margin:50px 0 0 0;padding:0 0 0 40px;}
 section#sidebar li{margin:0;padding:10px 0 20px;clear:both;display:block;float:none;}section#sidebar li a{color:#999999;font-size:15px;line-height:19px;border:2px solid #eeeeee;border-radius:35px;-moz-border-radius:35px;-webkit-border-radius:35px;padding:7px 15px;}
 section#sidebar footer{margin:0;padding:0;position:absolute;bottom:45px;width:258px;text-align:center;color:#999999;font-size:12px;font-weight:300;line-height:15px;}
