@@ -52,6 +52,7 @@ These are the Pelican global variables currently supported by the theme:
 - `LINKS(('name1', 'url1'), ('name2', 'url2'))`
 - `DEFAULT_DATE_FORMAT = ('%b %d, %Y')`: suggested date format
 - `FEED_DOMAIN = SITEURL`
+- `AUTHOR_BIO`, providing a short bio that appears on the side bar.
 
 When developing locally, set the following variable:
 

@@ -30,6 +30,9 @@
 		<div class="user_meta">
             <h1 id="user"><a href="{{ SITEURL }}" class="">{{ AUTHOR }}</a></h1>
 			<h2>{{ TAGLINE }}</h2>
+			{% if AUTHOR_BIO %}
+			<p class="bio">{{ AUTHOR_BIO }}</p>
+			{% endif %}
 			<ul>
 				{% for title, link in MENUITEMS %}
 					<li><a href="{{ link }}">{{ title }}</a></li>
