@@ -48,6 +48,7 @@ instructions](http://pelican.notmyidea.org/en/latest/pelican-themes.html).
 These are the Pelican global variables currently supported by the theme:
 
 - `GOOGLE_ANALYTICS`
+- `GAUGES_ANALYTICS`
 - `DISQUS_SITENAME`
 - `LINKS(('name1', 'url1'), ('name2', 'url2'))`
 - `DEFAULT_DATE_FORMAT = ('%b %d, %Y')`: suggested date format
